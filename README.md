@@ -4,6 +4,63 @@ _Copyright Frederik Trampenau All Rights Reserved._
 
 Squad Goals is a project developed and owned by Frederik Trampenau.
 
+## Stages
+
+The project's status is divided into different "stages" of development.
+Every stage has its own resources (i.e. Backend, Remote Content/Assets, Balancing Data) so players are not affected by the development of the project.
+For the "in-development" stages, this is also reflected in the Git branching structure to ensure increased safety in stages closer to release versions.
+
+Here is an overview of the used stages and their branches (if they have one):
+| Stage   | Branch  | Usage                                                                                                                                                 |
+| ------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DEV     | dev     | Current work-in-progress state developers are working on preparing the next main update.                                                              |
+| QA      | qa      | Safer state of the project which should be ready for testing. Gets based on the dev branch now and then and is used to prepare the next release.      |
+| LIVE    | -       | Safest state of the project, this is the version players have access to. It doesn't have a branch since we have release-version branches for it.      |
+
+## Versioning
+
+We have versions for the...
+* Client
+* Backend
+* Balancing Data
+* Content/Assets
+  * Especially important for remote content (provided i.e. via a CDN)
+  * There can also be separate versions for different groups of content (i.e. DLCs)
+
+### The Game/Client Version
+
+The game version will be split into `[Major]`.`[Minor]`.`[Revision]`_`[UniqueBuildId]`
+
+Other versions (i.e. from the Backend or Balancing Data) will follow a similar structure but might be simplified.
+
+## Git Structure
+
+The Git repository should align with the following guidelines.
+
+### The `main` Branch
+
+The `main` branch was used initially to set up the project.
+It was replaced by stage or release version-specific branches later on.
+In rare cases it might be used to perform basic project setup or to update documentation (like this README.md file).
+
+### Stage Branches
+
+The stage branches follow the guidelines described in the "Stages" section above.
+
+### Version Branches
+
+Version branches are structured as follows:
+`release/[ClientVersion]`
+For example:
+`release/1.7.0_12345`
+
+## Git Style Guide
+
+The style of Git commits should follow the "Conventional Commits" rules.
+
+> [!IMPORTANT]
+> Style Guide Website (summary): https://www.conventionalcommits.org/en/v1.0.0/#summary
+
 ## Client UE5 Project Style Guide
 
 The style of the UE5 client project should follow the "ue5-style-guide" from "Allar".
@@ -21,6 +78,9 @@ Example for the asset "Bob":
 | Texture (Normal)         | T_Bob_N       |
 | Texture (Evil Diffuse)   | T_Bob_Evil_D  |
 | Blueprint                | BP_Bob        |
+
+> [!IMPORTANT]
+> Marking the default assets with `_Default` might improve readability (i.e. `T_Bob_Default_D`).
 
 **Most Important Links**
 * Assets
@@ -44,10 +104,3 @@ The C++ files should follow the Epic Games Coding Standard.
 
 Furthermore, all source files (.h, .cpp, .xaml) should have the following copyright notice as the first line in the file:
 > _// Copyright Frederik Trampenau All Rights Reserved._
-
-## Git Style Guide
-
-The style of Git commits should follow the "Conventional Commits" rules.
-
-> [!IMPORTANT]
-> Style Guide Website (summary): https://www.conventionalcommits.org/en/v1.0.0/#summary
