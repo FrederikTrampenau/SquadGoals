@@ -4,6 +4,25 @@ _Copyright Frederik Trampenau All Rights Reserved._
 
 Squad Goals is a project developed and owned by Frederik Trampenau.
 
+## How To Get The Project
+To get and open the project you have to...
+1. Clone the repository
+2. Right-click "SquadGoals-Client/SquadGoals.uproject"
+3. Select "Generate Visual Studio project files"
+4. Open the "SquadGoals-Client/SquadGoals.sln" solution
+5. Rebuild the solution
+6. Run the "SquadGoals" configuration in Debug mode
+
+Done! This should now open the project in Unreal Engine.
+
+## Tools & Tech Stack
+
+### Unreal Engine Version
+This project is developed using Unreal Engine version 5.3.2.
+
+### IDE
+There is no specific IDE that this project must be developed with. I personally tend to use JetBrains' Rider.
+
 ## Stages
 
 The project's status is divided into different "stages" of development.
