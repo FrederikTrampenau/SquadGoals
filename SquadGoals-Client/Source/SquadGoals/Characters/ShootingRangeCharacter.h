@@ -52,4 +52,5 @@ private:
 	void ProcessLookHorizontalInput(const FInputActionValue& InputValue);
 	void ResetLookHorizontalInput(const FInputActionValue& InputValue);
 	void ProcessJumpInput(const FInputActionValue& InputValue);
+	void ProcessShootInput(const FInputActionValue& InputValue);
 };

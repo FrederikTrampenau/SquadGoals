@@ -125,3 +125,10 @@ void AShootingRangeCharacter::ProcessJumpInput(const FInputActionValue& InputVal
 {
 	Jump();
 }
+
+void AShootingRangeCharacter::ProcessShootInput(const FInputActionValue& InputValue)
+{
+#if UE_BUILD_DEBUG || UE_EDITOR
+	PRINT_TEXT("Shoot", FColor::Red)
+#endif
+}
