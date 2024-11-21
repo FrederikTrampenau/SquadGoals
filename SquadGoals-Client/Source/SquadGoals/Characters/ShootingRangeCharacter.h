@@ -13,7 +13,7 @@ class UFirstPersonCharacterInputConfig;
 class UInputMappingContext;
 
 UCLASS()
-class SQUADGOALS_API AShootingRangeCharacter : public ACharacter
+class SQUADGOALS_API AShootingRangeCharacter final : public ACharacter
 {
 	GENERATED_BODY()
 

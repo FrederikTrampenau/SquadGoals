@@ -11,7 +11,7 @@ class UInputAction;
  * Class for configuring input actions for a first person character.
  */
 UCLASS(Blueprintable)
-class SQUADGOALS_API UFirstPersonCharacterInputConfig : public UDataAsset
+class SQUADGOALS_API UFirstPersonCharacterInputConfig final : public UDataAsset
 {
 	GENERATED_BODY()
 

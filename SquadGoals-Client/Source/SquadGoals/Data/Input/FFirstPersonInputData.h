@@ -3,7 +3,7 @@
 #include "FFirstPersonInputData.generated.h"
 
 USTRUCT(BlueprintType)
-struct FFirstPersonInputData
+struct FFirstPersonInputData final
 {
 	GENERATED_BODY()
 	

@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class SQUADGOALS_API UUShootingRangeGameInstance : public UGameInstance
+class SQUADGOALS_API UUShootingRangeGameInstance final : public UGameInstance
 {
 	GENERATED_BODY()
 };

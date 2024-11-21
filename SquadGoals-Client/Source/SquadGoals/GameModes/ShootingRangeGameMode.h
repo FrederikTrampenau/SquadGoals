@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class SQUADGOALS_API AShootingRangeGameMode : public AGameModeBase
+class SQUADGOALS_API AShootingRangeGameMode final : public AGameModeBase
 {
 	GENERATED_BODY()
 };
