@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-#define UE_PRINT_TEXT(Log, Value, Color) \
+#define UE_PRINT_TEXT_WITH_VALUE(Log, Value, Color) \
 if(GEngine) \
 { \
 GEngine->AddOnScreenDebugMessage(-1, 0.2f, Color, FString::Printf(TEXT(Log), Value)); \
