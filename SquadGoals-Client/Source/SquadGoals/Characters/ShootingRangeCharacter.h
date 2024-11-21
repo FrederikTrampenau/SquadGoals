@@ -3,14 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "InputActionValue.h"
-#include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
 #include "SquadGoals/Data/Input/FFirstPersonInputData.h"
 #include "ShootingRangeCharacter.generated.h"
 
 struct FInputActionValue;
-struct FFirstPersonInputData;
+class UCameraComponent;
 class UFirstPersonCharacterInputConfig;
 class UInputMappingContext;
 

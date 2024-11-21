@@ -1,9 +1,10 @@
 ﻿// Copyright Frederik Trampenau All Rights Reserved.
 
 #include "ShootingRangeCharacter.h"
-#include "Components/CapsuleComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
+#include "Camera/CameraComponent.h"
+#include "Components/CapsuleComponent.h"
 #include "SquadGoals/Data/Configs/Input/FirstPersonCharacterInputConfig.h"
 #include "SquadGoals/Debug/DebugPrintHelpers.h"
 
